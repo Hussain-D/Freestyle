@@ -37,4 +37,9 @@ canny_img = canny(gaussian_img)
 plt.imshow(canny_img, cmap="gray")
 plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
 
+# TO HSV
+hsv_img = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
+lower_yellow = np.array([20, 100, 100], dtype='uint8')
+upper_yellow = np.array([30, 255, 255], dtype='uint8')
+
 plt.show()
