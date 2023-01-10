@@ -32,4 +32,9 @@ gaussian_img = gauss(grey_img)
 plt.imshow(gaussian_img, cmap="gray")
 plt.title('Gaussian Blur'), plt.xticks([]), plt.yticks([])
 
+# CANNY EDGE
+canny_img = canny(gaussian_img)
+plt.imshow(canny_img, cmap="gray")
+plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
+
 plt.show()
