@@ -27,4 +27,9 @@ img = cv2.imread("C:/Users/D P Balaiah/Documents/Sem 7/Major Project/Hu/sample l
 grey_img = grey(img)
 plt.imshow(grey_img)
 
+# GAUSSIAN BLUR
+gaussian_img = gauss(grey_img)
+plt.imshow(gaussian_img, cmap="gray")
+plt.title('Gaussian Blur'), plt.xticks([]), plt.yticks([])
+
 plt.show()
