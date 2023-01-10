@@ -42,4 +42,11 @@ hsv_img = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
 lower_yellow = np.array([20, 100, 100], dtype='uint8')
 upper_yellow = np.array([30, 255, 255], dtype='uint8')
 
+mask_yellow = cv2.inRange(hsv_img, lower_yellow, upper_yellow)
+mask_white = cv2.inRange(canny_img, 200, 255)
+mask_yw = cv2.bitwise_or(mask_white, mask_yellow)
+mask_yw_img = cv2.bitwise_and(canny_img, mask_yw)
+
+plt.imshow(mask_yw_img, cmap="gray")
+plt.title('mask_yw_img'), plt.xticks([]), plt.yticks([])
 plt.show()
