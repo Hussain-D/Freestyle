@@ -46,6 +46,7 @@ def make_bricks(small, big, goal):
   """This below commented code passes all the above cases 
   but failed in hidden cases which are unknown"""
   
+  #----------1--------------
   # if 5*big > goal:
   #   if goal%5 == small:
   #     return True
@@ -56,16 +57,19 @@ def make_bricks(small, big, goal):
   #     return True
   # return False
   
+  #----------2--------------
   # if (5*big + small)<goal:
   #   return False
   # if goal%5 > small:
   #   return False
   # return True
 
+  #----------3--------------
   # if (5*big + small)>=goal and goal%5 <= small:
   #   return True
   # return False
 
+  #----------4--------------
   return True if (5*big + small)>=goal and goal%5 <= small else False
 
-print("make_bricks(%2d,%2d,%2d)"%(6,1,11)+" --> "+str(make_bricks(6,1,11)))
+print("make_bricks(%2d,%2d,%2d)"%(40,1,46)+" --> "+str(make_bricks(40,1,46)))
