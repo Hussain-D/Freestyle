@@ -56,10 +56,14 @@ def make_bricks(small, big, goal):
   #     return True
   # return False
   
-  if (5*big + small)<goal:
-    return False
-  if goal%5 > small:
-    return False
-  return True
+  # if (5*big + small)<goal:
+  #   return False
+  # if goal%5 > small:
+  #   return False
+  # return True
 
-print("make_bricks(%2d,%2d,%2d)"%(3,1,9)+" --> "+str(make_bricks(3,1,9)))
+  if (5*big + small)>=goal and goal%5 <= small:
+    return True
+  return False
+
+print("make_bricks(%2d,%2d,%2d)"%(6,0,11)+" --> "+str(make_bricks(6,0,11)))
