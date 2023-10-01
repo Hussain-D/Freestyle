@@ -1,7 +1,7 @@
 """
 def Productsmallpair(sum,arr)
 
-This function accepts the integers sum and arr. It is used to find the arr(j) and arr(k), where k ! = j. arr(j) and arr(k) should be the smallest elements in the array.
+This function accepts the integers sum and arr. It is used to find the arr(j) and arr(k), where k ! = j. arr(j) and arr(k) should be the smallest elements in the array and return the product of element of this pair.
 
 Keep this in mind:
 
