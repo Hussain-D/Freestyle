@@ -11,6 +11,18 @@ Assumption
 
 Example
 
+Input
+n:4
+m:20
+Output
+90
+
+Explanation
+
+    Sum of numbers divisible by 4 are 4 + 8 + 12 + 16 + 20 = 60
+    Sum of numbers not divisible by 4 are 1 +2 + 3 + 5 + 6 + 7 + 9 + 10 + 11 + 13 + 14 + 15 + 17 + 18 + 19 = 150
+    Difference 150 - 60 = 90
+    
 Input:
 m = 6
 n = 30
@@ -20,7 +32,7 @@ Output:
 
     Integers divisible by 6 are 6, 12, 18, 24, and 30. Their sum is 90.
     Integers that are not divisible by 6 are 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 25, 26, 27, 28, and 29. Their sum is 375.
-    The difference between them is 285 (375 – 90).
+    The difference between them is 285 (375 - 90).
      
 
 Sample input:
