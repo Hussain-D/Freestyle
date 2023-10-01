@@ -1,7 +1,7 @@
 """
 def LargeSmallSum(arr)
 
-The function takes an integral arr which is of the size or length of its arguments. Return the sum of the second smallest element at odd position ‘arr’ and the second largest element at the even position.
+The function takes an integral arr which is of the size or length of its arguments. Return the sum of the second smallest element at odd position 'arr' and the second largest element at the even position.
 
 Assumption
 
@@ -28,6 +28,12 @@ Explanation
     The second largest element at the even position is 3.
     The second smallest element at the odd position is 4.
     The output is 7 (3 + 4).
+    
+Sample Input
+arr:1 8 0 2 3 5 6
+
+Sample Output
+8
 """
 
 def LargeSmallSum(l):
