@@ -12,11 +12,20 @@ Hints: In case of input data being supplied to the question,
 it should be assumed to be a console input.
 """
 
-value = []
-items=[x for x in input().split(',')]
-for p in items:
-    intp = int(p, 2)
-    if not intp%5:
-        value.append(p)
+# value = []
+# items=[x for x in input().split(',')]
+# for p in items:
+#     intp = int(p, 2)
+#     if not intp%5:          # Perfect use of '%'(rem), '0' and 'not'
+#         value.append(p)
 
-print(','.join(value))
+# print(','.join(value))
+
+
+l = list(input().split(','))
+va = []
+for i in l:
+    if (int(i,2)%5)==0:
+        va.append(i)
+
+print(','.join(va))
