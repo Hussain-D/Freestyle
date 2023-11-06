@@ -9,7 +9,8 @@ else
      return “Not Palindrome”;
 }
 
-Thus palindrome string is the one which on reversing remains the same, for example, – ‘madam’ is a palindrome string.
+Thus palindrome string is the one which on reversing remains the same, 
+for example, - 'madam' is a palindrome string.
 """
 
 """
