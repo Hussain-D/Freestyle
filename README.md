@@ -9,7 +9,7 @@ Welcome to my personal progress showcase repository! This is my space to track a
 
 ## About
 
-This repository serves as a personal log and a visual representation of my growth and development. I use it to keep track of my achievements, document my learning journey, and reflect on my progress.
+This repository serves as a personal log and a visual representation of my growth and development. I use it to keep track of my achievements, document my learning journey, and reflect on my progress
 
 ## License
 
