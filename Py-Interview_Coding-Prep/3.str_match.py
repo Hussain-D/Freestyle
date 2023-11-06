@@ -57,25 +57,7 @@ for (Character ch: charct){
 # list_of_chars = [i for i in st1 if i in st2]
 # print(list_of_chars)
 
-"""#--> 3 dictionaries naive"""
-# s = "abcdef"
-# ss = "bsdkef"
-# d = dict()
-# for i in s:
-#     if i not in d:
-#         d[i]=1
-#     else:
-#         d[i]=d[i]+1
-# for i in ss:
-#     if i not in d:
-#         d[i] = 1
-#     else:
-#         d[i] = d[i]+1
-# for i in d.keys():
-#     if d[i]>1:
-#         print(i)
-
-"""#--> 4 sets"""
+"""#--> 3 sets"""
 # s = "abcdef"
 # ss = "bsdkef"
 # l = [i for i in s]
