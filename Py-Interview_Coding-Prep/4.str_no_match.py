@@ -45,30 +45,24 @@ for (Character ch: charct){
 }
 """
 
-"""#--> 1 dictionaries"""
-# s1 = 'abcdef'
-# s2 = 'bsdkef'
-# l1 = [i for i in s1]
-# l2 = [i for i in s2]
-# di = {}
-# non_mat = []
-# for i in l1:
-#     if i not in di:
-#         di[i] = 1
-#     else:
-#         di[i] += 1
-# for i in l2:
-#     if i not in di:
-#         di[i] = 1
-#     else:
-#         di[i] += 1
-# for i in di.keys():
-#     if di[i]==1:
-#         non_mat.append(i)
-# print(l1)
-# print(l2)
-# print(di)
-# print(non_mat)
+"""#--> 1 Naive"""
+s1 = 'abcdef'
+s2 = 'bsdkef'
+l1 = set([i for i in s1])
+l2 = set([i for i in s2])
+non_mat = []
+
+for i in l1:
+   if i not in l2:
+      non_mat.append(i)
+for i in l2:
+   if i not in l1:
+      non_mat.append(i)
+
+      
+print(l1)
+print(l2)
+print(set(non_mat))
 
 """#--> 2 sets"""
 # s1 = 'abcdef'
