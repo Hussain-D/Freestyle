@@ -45,6 +45,35 @@ for (Character ch: charct){
 }
 """
 
+"""#--> Dictionaries"""
+# s1 = 'abcdef'
+# s2 = 'bsdkef'
+# l1 = [i for i in s1]
+# l2 = [i for i in s2]
+# di = {}
+# non_mat = []
+# for i in l1:
+#     if i not in di:
+#         di[i] = 1
+#     else:
+#         di[i] += 1
+# for i in l2:
+#     if i not in di:
+#         di[i] = 1
+#     else:
+#         di[i] += 1
+# for i in di.keys():
+#     if di[i]==1:
+#         non_mat.append(i)
+# print(l1)
+# print(l2)
+# print(di)
+# print(non_mat)
+"""
+The above program fails when s1 = 'aabbcccdef', s2 = 'bsdkef'
+* Any of the strings have repeating characters
+"""
+
 """#--> 1 Naive"""
 s1 = 'abcdef'
 s2 = 'bsdkef'
@@ -58,7 +87,6 @@ for i in l1:
 for i in l2:
    if i not in l1:
       non_mat.append(i)
-
       
 print(l1)
 print(l2)
