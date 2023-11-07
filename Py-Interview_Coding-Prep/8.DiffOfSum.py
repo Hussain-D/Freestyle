@@ -1,7 +1,11 @@
 """
 def differenceofSum(n.m)
 
-The function takes two integrals m and n as arguments. You are required to obtain the total of all integers ranging between 1 to n (both inclusive) which are not divisible by m. You must also return the distinction between the sum of integers not divisible by m with the sum of integers divisible by m.
+The function takes two integrals m and n as arguments. 
+You are required to obtain the total of all integers ranging 
+between 1 to n (both inclusive) which are not divisible by m. 
+You must also return the distinction between the 
+sum of integers not divisible by m with the sum of integers divisible by m.
 
 Assumption
 
@@ -44,11 +48,22 @@ Sample output:
 """
 
 def differenceofSum(m,n):
+    
+    """ List Comprehension Method """
     list_of_div = [i for i in range(1,n+1) if i%m==0]
     list_of_non_div = [i for i in range(1,n+1) if i%m!=0]
     print("Divisible: ",list_of_div)
     print("Non-Divisible: ",list_of_non_div)
     print("Output: ",sum(list_of_non_div)-sum(list_of_div))
     
+    """ Naive Method """
+    sum_div = sum_not_div = 0
+    for i in range(1,n+1):
+        if i%m == 0:
+            sum_div += i
+        else:
+            sum_not_div += i
+    print("Output: ",abs(sum_div - sum_not_div))
+     
 # differenceofSum(6,30)
 differenceofSum(3,10)
