@@ -75,22 +75,22 @@ The above program fails when s1 = 'aabbcccdef', s2 = 'bsdkef'
 """
 
 """#--> 1 Naive"""
-s1 = 'abcdef'
-s2 = 'bsdkef'
-l1 = set([i for i in s1])
-l2 = set([i for i in s2])
-non_mat = []
+# s1 = 'abcdef'
+# s2 = 'bsdkef'
+# l1 = set([i for i in s1])
+# l2 = set([i for i in s2])
+# non_mat = []
 
-for i in l1:
-   if i not in l2:
-      non_mat.append(i)
-for i in l2:
-   if i not in l1:
-      non_mat.append(i)
+# for i in l1:
+#    if i not in l2:
+#       non_mat.append(i)
+# for i in l2:
+#    if i not in l1:
+#       non_mat.append(i)
       
-print(l1)
-print(l2)
-print(set(non_mat))
+# print(l1)
+# print(l2)
+# print(set(non_mat))
 
 """#--> 2 sets"""
 # s1 = 'abcdef'
