@@ -1,5 +1,7 @@
 """
 Find the position of the substring in the main string
+*
+This is possibly an example of classic sliding window
 """
 s1 = 'abcd'
 s2 = 'kjkeoldlabcdadfdabcdv'
