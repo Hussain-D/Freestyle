@@ -1,9 +1,12 @@
 """
-For writing numbers, there is a system called N-base notation. This system uses only N-based symbols. It uses symbols that are listed as the first n symbols. Decimal and n-based notations are 0:0, 1:1, 2:2, …, 10:A, 11:B, …, 35:Z.
+For writing numbers, there is a system called N-base notation. 
+This system uses only N-based symbols. It uses symbols that are listed as the first n symbols. 
+Decimal and n-based notations are 0:0, 1:1, 2:2, …, 10:A, 11:B, …, 35:Z.
 
 Perform the function: Chars DectoNBase(int n, int num)
 
-This function only uses positive integers. Use a positive integer n and num to find out the n-base that is equal to num.
+This function only uses positive integers. 
+Use a positive integer n and num to find out the n-base that is equal to num.
 
 Steps
 
@@ -51,4 +54,5 @@ while(num!=0):
     #     nbase = nbase+str(rem)
     # else:
     #     nbase = nbase + chr(rem+55)
+
 print(nbase[::-1])
