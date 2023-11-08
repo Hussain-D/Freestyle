@@ -68,7 +68,7 @@ print(ratcounthouse(tot_qty,arr))
 
 # Naive Approach
 
-def calculate (r, unit, arr, n):
+def calculate(r, unit, arr, n):
     if n == 0:
         return -1 
         
