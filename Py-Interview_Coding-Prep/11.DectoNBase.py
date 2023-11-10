@@ -32,7 +32,7 @@ Output:
 Explanation
 num	Divisor	Quotient	Remainder
 718	12	    59	        10(A)
-59	2	    4	        11(B)
+59	12	    4	        11(B)
 4	12	    0	        4(4)
 
 Sample input:
@@ -50,6 +50,7 @@ while(num!=0):
     rem = num % n
     num = num // n
     nbase = (nbase+str(rem)) if rem<10 else (nbase+chr(rem+55))
+    
     # if rem<10:
     #     nbase = nbase+str(rem)
     # else:
